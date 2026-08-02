@@ -18,6 +18,7 @@
   }
   h1 { font-size: 1.75rem; margin-bottom: .25rem; }
   h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; }
   .date { color: #666; font-size: .9rem; margin-top: 0; }
   .summary { background: #f6f6f6; border: 1px solid #e2e2e2; border-radius: .5rem; padding: 1rem 1.25rem; margin: 1.5rem 0; }
   ul { padding-left: 1.25rem; }
@@ -28,15 +29,17 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="date">Forth · Effective July 30, 2026</p>
+<p class="date">Forth · Effective August 2, 2026</p>
 
 <div class="summary">
   <strong>The short version.</strong> Forth has no accounts and no sign-up. Your
   assessment answers, session history, progress, and blocker settings are stored
-  on your phone and are never sent to us. We collect a small amount of anonymous
-  usage data to see which parts of the app people use, and you can turn that off
-  inside the app. We never collect your notes, your answers, the sites you block,
-  or your browsing history.
+  on your phone and are never sent to us. The one exception is The Room, Forth's
+  community feed: posts you write there are sent to our server, checked before
+  anyone sees them, and deleted after seven days. We collect a small amount of
+  anonymous usage data to see which parts of the app people use, and you can turn
+  that off inside the app. We never collect your notes, your answers, the sites
+  you block, or your browsing history.
 </div>
 
 <h2>Who this covers</h2>
@@ -49,8 +52,13 @@
 <h2>No account, no sign-up</h2>
 <p>
   Forth does not ask you to create an account, and does not ask for your name,
-  email address, or phone number. There is no profile to log into and nothing
-  for us to look up about you.
+  email address, or phone number. There is no profile to log into.
+</p>
+<p>
+  If you use The Room, your phone creates a random id for itself so the feed
+  knows which posts are yours. It holds no name, email, or phone number, and it
+  is not connected to your subscription. The section below explains how that
+  works.
 </p>
 
 <h2>What stays on your device</h2>
@@ -68,6 +76,100 @@
   You can erase all of this at any time from the Privacy screen inside the app.
   Deleting the app also removes it. Because it never leaves your device, we
   cannot recover it for you, and we cannot see it.
+</p>
+
+<h2>The Room</h2>
+<p>
+  The Room is Forth's community feed. It is the one part of the app that sends
+  something you wrote to our server. Everything listed above stays on your phone.
+  What you post here does not.
+</p>
+<p>
+  Posts are up to 500 characters, with replies one level deep. Every post is
+  deleted seven days after it is written, along with its replies. Nothing you
+  write builds into a history that someone could read back later.
+</p>
+
+<h3>Your handle</h3>
+<p>
+  You do not choose a name. Forth generates one for you from a fixed wordlist,
+  like <strong>QuietHeron-482</strong>. This is deliberate. People tend to reuse
+  a username they already have somewhere else, and in this category that can
+  identify you to anyone who recognises it.
+</p>
+<p>
+  You can change your handle whenever you want. Old posts keep the old handle so
+  conversations still read properly, and anything you write afterwards is not
+  connected to what came before. There is no profile page anywhere in The Room,
+  so nobody can pull up a list of everything one handle has written. Deleting
+  the app loses the handle for good.
+</p>
+
+<h3>Your subscription is not connected to your posts</h3>
+<p>
+  The Room is part of the paid subscription, so our server has to confirm that
+  you are subscribed. It does that without learning which subscriber you are.
+</p>
+<p>
+  When you subscribe, your phone makes up a random token and hides it behind a
+  random number of its own before sending it to us. We check your purchase with
+  Apple and sign the token while it is still hidden, so we never see its value.
+  Your phone then removes the hiding. When you first open The Room, it hands
+  back a token we have never laid eyes on. No record connects your Apple
+  purchase to your handle, because that connection is never created in the first
+  place. It is not that we promise not to look. There is nothing there to look
+  at.
+</p>
+
+<h3>Moderation</h3>
+<p>
+  Every post is checked automatically before anyone else can see it, and that
+  check reads the full text of what you wrote. There is no way to moderate a
+  feed without something reading it, and we would rather say so than let you
+  assume your posts are unreadable.
+</p>
+<p>
+  The check runs through Anthropic's Claude API, which receives the text of the
+  post and nothing else. No handle, no id, no subscription information. Anthropic
+  does not use it to train their models, and neither do we. We do not keep the
+  text of the check after it finishes.
+</p>
+<p>
+  Posts are held or blocked for sexual or explicit content, contact details or
+  links, shaming and moralising, claims that anything cures addiction, spam, and
+  harassment. If your post is blocked you are told which rule it hit and how to
+  appeal. If a post suggests you may be in crisis, it is held and you are shown
+  support resources rather than a rejection notice.
+</p>
+<p>
+  You can report any post and block any handle from inside the app. Reports
+  reach a person.
+</p>
+
+<h3>What this does not protect you from</h3>
+<p>
+  We would rather be straight with you about the limits than oversell this.
+</p>
+<ul>
+  <li>
+    Being anonymous depends on there being a crowd to be anonymous in. Forth is
+    new, and while the community is small, the timing of a post can narrow down
+    who wrote it.
+  </li>
+  <li>
+    None of this hides what you actually say. A post that contains identifying
+    details identifies you, no matter how the account behind it works.
+  </li>
+  <li>
+    Reaching The Room means your phone connects to our server, the same as
+    visiting any website. We do not use those connections to build a picture of
+    who you are.
+  </li>
+</ul>
+<p>
+  Posts are never sold, never shown to advertisers, and never used to train AI
+  models. They are not connected to your assessment answers, your progress, your
+  blocker settings, or your subscription.
 </p>
 
 <h2>Anonymous usage analytics</h2>
@@ -133,6 +235,8 @@
   <li>We do not track you across other apps or websites.</li>
   <li>We do not collect your notes, answers, blocked destinations, or browsing history.</li>
   <li>We do not access your contacts, photos, microphone, or camera.</li>
+  <li>We do not use community posts to train AI models.</li>
+  <li>We do not link community posts to your subscription, your plan, or your progress.</li>
 </ul>
 
 <h2>Children</h2>
