@@ -29,247 +29,359 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="date">Forth · Effective August 2, 2026</p>
+<p class="date">Forth · Effective September 6, 2026 · Last updated September 6, 2026</p>
 
 <div class="summary">
-  <strong>The short version.</strong> Forth has no accounts and no sign-up. Your
-  assessment answers, session history, progress, and blocker settings are stored
-  on your phone and are never sent to us. The one exception is The Room, Forth's
-  community feed: posts you write there are sent to our server, checked before
-  anyone sees them, and deleted after seven days. We collect a small amount of
-  anonymous usage data to see which parts of the app people use, and you can turn
-  that off inside the app. We never collect your notes, your answers, the sites
-  you block, or your browsing history.
+  <strong>Privacy at a glance.</strong> Forth keeps its core recovery features on
+  your device. There is no app login. Optional web checkout collects a billing
+  email and payment details through RevenueCat and Stripe. If you use The Room,
+  the service hosting the feed receives the posts
+  you share, a random community identifier, and standard authentication and
+  connection information. The moderation provider receives post text without
+  that identifier. Forth also uses limited product analytics unless you turn
+  them off. We do not sell personal information, show ads, or track you across
+  other apps and websites.
 </div>
 
-<h2>Who this covers</h2>
+<h2>1. About this policy</h2>
 <p>
-  This policy covers the Forth iOS app. Forth is operated by
-  <strong>Nikita Borisov</strong>. You can reach us at
-  <strong>nikitaborisov724@gmail.com</strong>.
+  This Privacy Policy explains how information is processed when you use the
+  Forth iOS app, The Room, Forth's support and legal pages, or communicate with
+  Forth support (together, the "Services"). Forth is operated by
+  <strong>Nikita Borisov</strong> ("Forth", "we", "us", or "our"). It should
+  be read together with our
+  <a href="./terms.html">Terms of Use</a>.
+</p>
+<p>
+  Recovery and sexual-wellness information can be sensitive. Washington and
+  Nevada residents should also read the separate
+  <a href="./washington-consumer-health-data.html">Washington Consumer Health Data Privacy Policy</a>
+  or
+  <a href="./nevada-consumer-health-data.html">Nevada Consumer Health Data Privacy Policy</a>,
+  as applicable.
 </p>
 
-<h2>No account, no sign-up</h2>
+<h2>2. Information processed on your device</h2>
 <p>
-  Forth does not ask you to create an account, and does not ask for your name,
-  email address, or phone number. There is no profile to log into.
+  Most of Forth works without a traditional account or sign-up. Web checkout
+  collects billing contact information as described in Section 5.
 </p>
 <p>
-  If you use The Room, your phone creates a random id for itself so the feed
-  knows which posts are yours. It holds no name, email, or phone number, and it
-  is not connected to your subscription. The section below explains how that
-  works.
+  Your assessment responses are used on your device to generate a plan. Once
+  the plan is created, the raw responses are discarded and the resulting plan
+  is stored locally.
 </p>
-
-<h2>What stays on your device</h2>
 <p>
-  The following is stored locally on your phone and is not transmitted to us:
+  The following information is also stored locally:
 </p>
 <ul>
-  <li>Your assessment answers and the plan generated from them</li>
-  <li>Your reset session history, timings, and any intensity ratings</li>
-  <li>Your streak, progress, world discoveries, and saved gallery artwork</li>
-  <li>Your blocker settings, including any custom website addresses you add</li>
-  <li>Your app preferences, including reminder times and privacy settings</li>
+  <li>Your plan, reset history, intensity ratings, and reflections</li>
+  <li>Your progress, world discoveries, and saved artwork</li>
+  <li>Your blocker configuration and custom website addresses</li>
+  <li>Your reminder, privacy, and app preferences</li>
+  <li>Any creator code you enter or open through a direct Forth link</li>
 </ul>
 <p>
-  You can erase all of this at any time from the Privacy screen inside the app.
-  Deleting the app also removes it. Because it never leaves your device, we
-  cannot recover it for you, and we cannot see it.
+  Forth does not send the content of your plan, ratings, reflections, blocker
+  selections, custom website addresses, or browsing history to us. If product
+  analytics is enabled, limited event details such as game mode, session
+  duration, and placement count may be sent as described in Section 4.
+</p>
+<p>
+  Daily reminders are scheduled by your device. Forth does not operate a push
+  notification server. If you enable the biometric lock, iOS performs the
+  authentication and tells Forth whether it succeeded; Forth does not receive
+  your fingerprint or Face ID data.
 </p>
 
-<h2>The Room</h2>
+<h2>3. The Room</h2>
+
+<h3>3.1 Community identity and records</h3>
 <p>
-  The Room is Forth's community feed. It is the one part of the app that sends
-  something you wrote to our server. Everything listed above stays on your phone.
-  What you post here does not.
+  The Room is Forth's community feed, hosted by Supabase. When you first use it,
+  Forth creates a community account with a random actor identifier and a
+  generated handle. This account does not contain your name, email address, or
+  phone number.
 </p>
 <p>
-  Posts are up to 500 characters, with replies one level deep. Every post is
-  deleted seven days after it is written, along with its replies. Nothing you
-  write builds into a history that someone could read back later.
+  To operate and protect The Room, the community service stores your actor
+  identifier, handle, account creation time, moderation status, posts and
+  replies, blocks, reports, and related timestamps. Reports also include the
+  selected report reason. The service keeps limited technical records used to
+  control access and prevent a Room eligibility token from being reused.
+</p>
+<p>
+  The community database does not contain a direct field connecting your Room
+  actor identifier to an Apple or RevenueCat customer identifier. We do not
+  provide public profile pages, though posts are associated with the same actor
+  identifier so that Forth can display conversations, identify your own posts,
+  and apply blocks and moderation rules.
 </p>
 
-<h3>Your handle</h3>
+<h3>3.2 Posts and visibility</h3>
 <p>
-  You do not choose a name. Forth generates one for you from a fixed wordlist,
-  like <strong>QuietHeron-482</strong>. This is deliberate. People tend to reuse
-  a username they already have somewhere else, and in this category that can
-  identify you to anyone who recognises it.
+  Posts are limited to 500 characters and replies are limited to one level.
+  Published posts are visible to other people who have access to The Room under
+  the generated handle shown with the post.
 </p>
 <p>
-  You can change your handle whenever you want. Old posts keep the old handle so
-  conversations still read properly, and anything you write afterwards is not
-  connected to what came before. There is no profile page anywhere in The Room,
-  so nobody can pull up a list of everything one handle has written. Deleting
-  the app loses the handle for good.
+  A generated handle is pseudonymous, but it does not guarantee anonymity.
+  Details in a post may identify you, and the timing of a post may make a writer
+  easier to recognize when the community is small. Avoid including names,
+  contact details, or other information that could identify you or someone else.
 </p>
 
-<h3>Your subscription is not connected to your posts</h3>
+<h3>3.3 Moderation</h3>
 <p>
-  The Room is part of the paid subscription, so our server has to confirm that
-  you are subscribed. It does that without learning which subscriber you are.
+  Every submitted post is reviewed by an automated moderation service before it
+  can be published. Forth sends the post text to Anthropic's commercial Claude
+  API without the handle, actor identifier, subscription information, or post
+  history. Forth does not use Room posts to train AI models or include them in
+  product analytics.
 </p>
 <p>
-  When you subscribe, your phone makes up a random token and hides it behind a
-  random number of its own before sending it to us. We check your purchase with
-  Apple and sign the token while it is still hidden, so we never see its value.
-  Your phone then removes the hiding. When you first open The Room, it hands
-  back a token we have never laid eyes on. No record connects your Apple
-  purchase to your handle, because that connection is never created in the first
-  place. It is not that we promise not to look. There is nothing there to look
-  at.
-</p>
-
-<h3>Moderation</h3>
-<p>
-  Every post is checked automatically before anyone else can see it, and that
-  check reads the full text of what you wrote. There is no way to moderate a
-  feed without something reading it, and we would rather say so than let you
-  assume your posts are unreadable.
+  Anthropic states that commercial API inputs and outputs are
+  <a href="https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training">not used to train its models by default</a>
+  and are ordinarily deleted from its systems within 30 days, subject to limited
+  safety, legal, or separately agreed exceptions. Its
+  <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">commercial data retention notice</a>
+  explains those periods and exceptions.
 </p>
 <p>
-  The check runs through Anthropic's Claude API, which receives the text of the
-  post and nothing else. No handle, no id, no subscription information. Anthropic
-  does not use it to train their models, and neither do we. We do not keep the
-  text of the check after it finishes.
+  The submitted post is stored in Forth's community database until it expires,
+  whether it is published, held, or rejected. Held posts and reported posts are
+  available for manual review. An authorized reviewer may see the post text,
+  handle, timestamps, moderation status, report details, and account moderation
+  history when completing that review.
 </p>
 <p>
-  Posts are held or blocked for sexual or explicit content, contact details or
-  links, shaming and moralising, claims that anything cures addiction, spam, and
-  harassment. If your post is blocked you are told which rule it hit and how to
-  appeal. If a post suggests you may be in crisis, it is held and you are shown
-  support resources rather than a rejection notice.
+  You can report a post and block or unblock a handle from inside the app.
+  Reports are stored with the reporter's actor identifier and are available for
+  manual review.
 </p>
 <p>
-  You can report any post and block any handle from inside the app. Reports
-  reach a person.
+  Posts leave the feed after seven days and are deleted from the active
+  community database shortly afterward. Replies and reports linked to a deleted
+  post are deleted with it. Other records, including the random Room account,
+  handle, blocks, moderation history, and technical access records, may be retained
+  for longer as described in Section 9.
 </p>
 
-<h3>What this does not protect you from</h3>
+<h2>4. Limited product analytics</h2>
 <p>
-  We would rather be straight with you about the limits than oversell this.
+  Unless you turn analytics off, Forth sends a limited set of product events to
+  PostHog. These events use a random app identifier that is not linked to your
+  name or contact information. They help us understand whether app features work
+  and where people leave the setup flow.
 </p>
+<p>
+  Events may record that a creator referral link was opened; an onboarding,
+  plan-reveal, offer, purchase, or restore event occurred; the dashboard, World,
+  gallery, or The Room was viewed; a reset or game activity occurred; a post or
+  reply submission was attempted; the blocker changed; or a reminder was
+  enabled. Limited fields may include a step number, offer identifier, game
+  mode, duration, placement count, post type, restore outcome, and creator code.
+</p>
+<p>
+  Analytics does not include assessment responses, plan content, ratings,
+  reflections, post text, handles, report or block reasons, blocker selections,
+  custom website addresses, or browsing history. PostHog person profiles,
+  session recording, automatic screen capture, and IP-based location lookup are
+  disabled.
+</p>
+<p>
+  You can turn analytics off from the Privacy screen. This stops future
+  analytics events from being sent; it does not automatically delete events
+  already received by PostHog.
+</p>
+
+<h2>5. Purchases and subscriptions</h2>
+<p>
+  Apple processes App Store subscription payments. We do not receive your full payment
+  card or Apple Account credentials. Forth uses RevenueCat to manage purchase
+  status. RevenueCat receives an anonymous customer identifier, Apple
+  receipt and purchase information, subscription status, last-use information,
+  and basic device and operating-system details. RevenueCat does not receive
+  your assessment responses, plan, reflections, blocker choices, or Room posts
+  from Forth.
+</p>
+<p>
+  If you choose web checkout, RevenueCat manages your subscription and Stripe
+  processes payment. We pass RevenueCat's app customer identifier to checkout
+  so the purchase can unlock access in Forth. Checkout collects your billing
+  email and the payment and billing details needed to complete the purchase.
+  RevenueCat and Stripe process these details and transaction records to manage
+  charges, renewals, receipts, cancellation, refunds, security, and support.
+  We can access billing contact information, subscription status, and transaction
+  records through their dashboards, but do not receive your full card number or
+  security code. Your billing email is not added to product analytics or used
+  to identify you in The Room. Forth does not send your assessment responses,
+  plan, reflections, blocker choices, or Room posts to web checkout.
+</p>
+<p>
+  Apple's handling of your purchase is described in
+  <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>, and
+  RevenueCat's handling of purchase information is described in its
+  <a href="https://www.revenuecat.com/privacy-policy">RevenueCat Privacy Policy</a>.
+  Stripe's handling of web payment information is described in the
+  <a href="https://stripe.com/privacy">Stripe Privacy Policy</a>.
+</p>
+
+<h2>6. The blocker and device permissions</h2>
+<p>
+  Forth's optional blocker uses Apple's Screen Time system. For apps, categories,
+  and web domains selected through Apple's picker, Forth receives opaque tokens
+  and counts rather than the selected names. Those tokens stay on your device.
+  Custom website addresses are also stored locally and passed to the blocking
+  system on your device. When you enable Forth's Safari extension, it checks
+  the current top-level website hostname locally against your blocking rules
+  to open a Reset for supported matches. It does not send visited hostnames
+  to us or store browsing history.
+</p>
+<p>
+  Forth does not request access to your contacts, photos, microphone, camera, or
+  precise location. It may request notification permission for a local daily
+  reminder and biometric authentication permission for the optional app lock.
+</p>
+
+<h2>7. Support communications</h2>
+<p>
+  If you email us, we receive your email address and the information you include
+  in your message. We use it to respond, troubleshoot, and keep a reasonable
+  record of the support request. Please avoid sending sensitive information that
+  is not needed to answer your question.
+</p>
+<p>
+  Forth's support and legal pages are hosted through GitHub Pages. When you
+  visit them, GitHub receives standard technical request information such as
+  your IP address, request time, and browser or device information to deliver
+  and secure the pages.
+</p>
+
+<h2>8. How information is used and disclosed</h2>
+<p>We use the information described above to:</p>
 <ul>
-  <li>
-    Being anonymous depends on there being a crowd to be anonymous in. Forth is
-    new, and while the community is small, the timing of a post can narrow down
-    who wrote it.
-  </li>
-  <li>
-    None of this hides what you actually say. A post that contains identifying
-    details identifies you, no matter how the account behind it works.
-  </li>
-  <li>
-    Reaching The Room means your phone connects to our server, the same as
-    visiting any website. We do not use those connections to build a picture of
-    who you are.
-  </li>
+  <li>Provide the app, The Room, and the features you request</li>
+  <li>Manage subscription access</li>
+  <li>Moderate community content and enforce the Terms of Use</li>
+  <li>Maintain security, prevent abuse, and troubleshoot reliability</li>
+  <li>Understand product usage and improve Forth</li>
+  <li>Respond to support requests and comply with legal obligations</li>
 </ul>
 <p>
-  Posts are never sold, never shown to advertisers, and never used to train AI
-  models. They are not connected to your assessment answers, your progress, your
-  blocker settings, or your subscription.
+  Our service providers include
+  <a href="https://supabase.com/privacy">Supabase</a>, which hosts The Room and
+  its community accounts; Anthropic, which processes post text for moderation;
+  <a href="https://posthog.com/privacy">PostHog</a>, which processes product
+  analytics; RevenueCat, which manages purchase status and web subscriptions;
+  Stripe, which processes web payments; Apple, which processes App Store payments
+  and provides device services;
+  <a href="https://policies.google.com/privacy">Google</a>, which delivers
+  support messages through Gmail; and
+  <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>,
+  which hosts the support and legal pages. We use these providers for the
+  purposes described in this policy. Their handling of information is also
+  governed by their terms, privacy commitments, and applicable law.
+</p>
+<p>
+  When Forth connects to an online service, the provider also receives technical
+  connection information such as an IP address, request time, and app, browser,
+  device, or operating-system information. Providers may create authentication,
+  security, and diagnostic logs to deliver, protect, and troubleshoot their
+  services. Forth does not collect precise location, and PostHog's IP-based
+  location lookup is disabled.
+</p>
+<p>
+  We do not sell personal information, use it for targeted advertising across
+  unrelated apps or websites, or provide it to data brokers. We may disclose limited
+  information if reasonably necessary to comply with law, protect the rights or
+  safety of users and others, investigate misuse, or complete a business
+  transfer. Where required, we will provide notice of a material change in who
+  controls the information.
 </p>
 
-<h2>Anonymous usage analytics</h2>
+<h2>9. Retention and deletion</h2>
 <p>
-  Forth sends a small set of anonymous events to PostHog, an analytics provider,
-  so we can see where people get stuck. These events record that something
-  happened, never what you answered. For example, we record that an assessment
-  step was completed, that a reset session started, or that a purchase screen was
-  viewed.
+  Local information remains on your device until it is changed or removed. The
+  Privacy screen includes a control for erasing certain local recovery records.
+  That control does not cancel your subscription, delete Room records, or reset
+  every iOS-managed setting or credential. Some
+  security credentials are stored through the iOS Keychain and may remain after
+  an app uninstall under Apple's device-storage behavior.
 </p>
 <p>
-  These events are not linked to a personal profile, and location lookup by IP
-  address is disabled. We do not use session recording or screen recording.
-  Analytics never includes your answers, ratings, notes, blocked sites, web
-  addresses, or browsing history — the app filters those out before anything is
-  sent.
+  Room posts leave the feed after seven days and are deleted from the active
+  community database shortly afterward. Reports linked to those posts are
+  deleted with them. Pseudonymous account records, handles, blocks, moderation
+  history, and technical access records may be kept while needed to operate and
+  protect The Room, meet legal obligations, or resolve disputes.
 </p>
 <p>
-  You can turn analytics off entirely on the Privacy screen inside the app.
-</p>
-
-<h2>Purchases</h2>
-<p>
-  Subscriptions are sold and processed by Apple. We never see your payment
-  details. We use RevenueCat to check whether your subscription is active;
-  RevenueCat receives an anonymous identifier and your subscription status, not
-  your identity. Apple's handling of your purchase is governed by
-  <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.
+  Analytics, purchase, moderation-provider, and support records are retained
+  according to the purpose for which they were collected and the applicable
+  provider settings or legal requirements. Deleted information may remain in
+  service-provider backups subject to their retention practices and legal
+  requirements.
 </p>
 
-<h2>The website and app blocker</h2>
-<p>
-  Forth's blocker uses Apple's Screen Time system. When you choose apps or
-  websites to block, Apple gives Forth an opaque token rather than the actual
-  names. Forth cannot read which apps or sites you selected, and neither can we.
-  These tokens stay on your device.
-</p>
-<p>
-  Any custom website addresses you type in are stored on your device and passed
-  only to the blocking system on your phone. They are never sent to us or to
-  analytics. Forth does not read, monitor, or record your browsing history.
-</p>
-
-<h2>Creator codes</h2>
-<p>
-  If you install Forth through a creator's link, the app stores a short creator
-  code so we can credit that creator. It is a plain code, not an advertising
-  identifier, and we do not use device fingerprinting or track you across other
-  apps or websites.
-</p>
-
-<h2>Notifications</h2>
-<p>
-  If you turn on the optional daily reminder, it is scheduled locally on your
-  phone. We do not operate a push notification server and cannot send you
-  messages.
-</p>
-
-<h2>What we never do</h2>
+<h2>10. Your choices and privacy rights</h2>
 <ul>
-  <li>We do not sell or rent your data.</li>
-  <li>We do not show ads or share data with advertising networks.</li>
-  <li>We do not track you across other apps or websites.</li>
-  <li>We do not collect your notes, answers, blocked destinations, or browsing history.</li>
-  <li>We do not access your contacts, photos, microphone, or camera.</li>
-  <li>We do not use community posts to train AI models.</li>
-  <li>We do not link community posts to your subscription, your plan, or your progress.</li>
-</ul>
-
-<h2>Children</h2>
-<p>
-  Forth is intended for adults and is rated for users 17 and older. It is not
-  directed at children, and we do not knowingly collect information from them.
-</p>
-
-<h2>Your choices</h2>
-<ul>
-  <li><strong>Turn off analytics</strong> — Privacy screen in the app.</li>
-  <li><strong>Erase your data</strong> — Privacy screen in the app, or delete the app.</li>
-  <li><strong>Lock the app</strong> — optional Face ID, Touch ID, or fingerprint lock.</li>
+  <li><strong>Analytics:</strong> turn off future product analytics from the Privacy screen.</li>
+  <li><strong>Certain local recovery records:</strong> use the erase control on the Privacy screen.</li>
+  <li><strong>Reminders and app lock:</strong> change these settings in Forth or iOS.</li>
+  <li><strong>Community controls:</strong> report posts and block or unblock handles in The Room.</li>
 </ul>
 <p>
-  Because Forth holds no account and stores your information on your own device,
-  there is no server-side record for us to export or delete on request. If you
-  have a question about your data, write to us at the address below.
+  Depending on where you live, you may have rights to access, correct, delete,
+  or restrict the use of personal information, or to object to certain
+  processing. To make a request, email us at the address below. Because Forth
+  does not collect your name or email as an app account, we may need information
+  from your device to verify that a Room record belongs to you. We may retain
+  information when required by law or when a legal exception applies.
+</p>
+<p>
+  The separate
+  <a href="./washington-consumer-health-data.html">Washington</a> and
+  <a href="./nevada-consumer-health-data.html">Nevada</a> consumer health data
+  policies explain additional rights and request and appeal procedures for
+  residents covered by those laws.
 </p>
 
-<h2>Changes to this policy</h2>
+<h2>11. Security and international processing</h2>
 <p>
-  If this policy changes, we will update the date at the top of this page and,
-  where the change is significant, note it in the app.
+  We use reasonable technical and organizational safeguards designed to protect
+  information processed for Forth. No storage or transmission system is
+  completely secure. Our service providers may process information in the
+  United States and other countries, which may have different data-protection
+  laws from where you live.
 </p>
 
-<h2>Contact</h2>
+<h2>12. Age requirement</h2>
 <p>
-  Questions about privacy: <strong>nikitaborisov724@gmail.com</strong>
+  Forth is intended for people age 16 and older and is not directed to children
+  under 13. If we learn that we collected online personal information from a
+  child under 13, we will delete it and take any other steps required by
+  applicable children's privacy law.
+</p>
+
+<h2>13. Changes to this policy</h2>
+<p>
+  We may update this Privacy Policy as Forth changes. We will update the date at
+  the top of this page and provide additional notice or obtain fresh consent
+  when required by law.
+</p>
+
+<h2>14. Contact</h2>
+<p>
+  Questions or privacy requests:
+  <strong><a href="mailto:nikitaborisov724@gmail.com">nikitaborisov724@gmail.com</a></strong>
 </p>
 
 <footer>
-  <a href="./index.html">Forth</a> · <a href="./terms.html">Terms of Use</a>
+  <a href="./index.html">Forth</a> ·
+  <a href="./terms.html">Terms of Use</a> ·
+  <a href="./washington-consumer-health-data.html">Washington Health Data</a> ·
+  <a href="./nevada-consumer-health-data.html">Nevada Health Data</a>
 </footer>
 
 </body>
