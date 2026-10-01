@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://gwwiwljuemiuumnqipbv.supabase.co; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Room review · Forth</title>
+  <link rel="stylesheet" href="./review.css">
+  <script type="module" src="./review.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Forth Room review">Forth<span class="brand-divider"></span><span>Room review</span></a>
+    <div class="top-actions">
+      <a class="quiet-link" href="https://app.notion.com/p/3e9c0139e761813f86abf64916a32be4" target="_blank" rel="noopener noreferrer">Back to Notion ↗</a>
+      <button id="logout" class="quiet" hidden>Sign out</button>
+    </div>
+  </header>
+  <main>
+    <section id="login" class="login">
+      <div class="eyebrow">PRIVATE MODERATION</div>
+      <h1>Review the Room.</h1>
+      <p class="login-intro">A single place for reported posts and posts waiting for approval.</p>
+      <div class="login-divider"></div>
+      <h2>Sign in with an email code</h2>
+      <p class="muted">We’ll send it to <strong>nikitaborisov724@gmail.com</strong>.</p>
+      <button id="send-code" class="primary">Send sign-in code <span aria-hidden="true">→</span></button>
+      <form id="code-form" hidden>
+        <label for="code">Code from your email</label>
+        <div class="code-row"><input id="code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,10}" minlength="6" maxlength="10" required><button class="primary" type="submit">Sign in</button></div>
+        <p class="small muted">The code expires in 10 minutes. Check Spam if it doesn’t arrive.</p>
+      </form>
+      <p id="login-message" class="message" role="status" aria-live="polite"></p>
+      <p class="login-footer">Infobolt LLC · Forth moderation</p>
+    </section>
+
+    <section id="workspace" hidden>
+      <div class="workspace-heading">
+        <div><div class="eyebrow">THE ROOM</div><h1>Review queue</h1><p class="muted">Read the context. Review reports within 24 hours.</p></div>
+        <div class="refresh-area"><button id="refresh" class="secondary">Refresh</button><span id="freshness" class="small muted">Loading…</span></div>
+      </div>
+      <div class="queue-summary"><span><strong id="total">—</strong> need review</span><span id="overdue-label"><strong id="overdue">—</strong> overdue</span></div>
+      <p id="workspace-message" class="message workspace-message" role="status" aria-live="polite"></p>
+      <div class="workspace-grid">
+        <aside class="inbox" aria-label="Posts needing review">
+          <div class="filters" role="group" aria-label="Filter posts">
+            <button data-filter="all" aria-pressed="true">All</button><button data-filter="reported" aria-pressed="false">Reported</button><button data-filter="held" aria-pressed="false">Held</button>
+          </div>
+          <div id="post-list" class="post-list"><p class="list-placeholder">Loading the queue…</p></div>
+          <p id="limit-note" class="small muted"></p>
+        </aside>
+        <section id="detail" class="detail" aria-label="Selected post"><div class="empty"><h2>Loading posts…</h2></div></section>
+      </div>
+      <footer class="workspace-footer">Only authorized moderators can view this queue. Email reminders continue while review is needed.</footer>
+    </section>
+  </main>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title">
+    <div class="dialog-content"><div class="eyebrow">CONFIRM ACTION</div><h2 id="confirm-title"></h2><p id="confirm-description"></p><div class="dialog-actions"><button id="cancel-action" class="secondary">Cancel</button><button id="confirm-action" class="danger"></button></div></div>
+  </dialog>
+</body>
+</html>
