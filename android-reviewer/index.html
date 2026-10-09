@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-9yDoEsxDegAQV9tiXfWo+PcY6uJv7q/9zrxyXJXvWic='; style-src 'sha256-N2GJFu80LuF16YDVnA90RO6zZu4biMnp+hsLD69e604='; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<title>Forth reviewer access</title>
+<style>html { color-scheme: light; font: 18px/1.5 system-ui, sans-serif; color: #162528; background: #fff9ee; }
+body { margin: 0; padding: 24px; }
+main { max-width: 38rem; margin: 2rem auto; }
+h1 { line-height: 1.2; }
+li { margin-block: .6rem; }
+label { display: block; font-weight: 600; margin-top: 1.5rem; }
+input, button { box-sizing: border-box; width: 100%; font: inherit; border: 2px solid #307f89; border-radius: 8px; padding: 14px; }
+input { background: #fff; color: #162528; margin-block: .5rem; }
+button { background: #1b5660; color: #fff; cursor: pointer; margin-block: .75rem; }
+:focus-visible { outline: 3px solid #162528; outline-offset: 3px; }
+#error { color: #8c2424; }
+.notice { font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Forth reviewer access</h1>
+<p>For the Google Play review of Forth on Android.</p>
+<ol>
+<li>Install Forth and open it once.</li>
+<li>Enter the private credential supplied in the Google Play Console App access instructions.</li>
+<li>Choose <strong>Open Forth</strong>.</li>
+</ol>
+<label for="credential">Private reviewer credential</label>
+<input id="credential" type="password" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" maxlength="64" aria-describedby="credential-hint error">
+<p id="credential-hint" class="notice">Use the complete 64-character credential. It is case-sensitive.</p>
+<p id="error" role="alert"></p>
+<button id="open-forth" type="button">Open Forth</button>
+<p id="status" role="status" aria-live="polite"></p>
+<p class="notice">This page passes the credential to Forth through its Android link. Forth checks reviewer access online. This page does not send it to a website, save it or track your visit.</p>
+</main>
+<script>(() => {
+  "use strict";
+  const input = document.getElementById("credential");
+  const error = document.getElementById("error");
+  const status = document.getElementById("status");
+  const clear = () => { input.value = ""; };
+  clear();
+  window.addEventListener("pagehide", clear);
+  window.addEventListener("pageshow", clear);
+  document.getElementById("open-forth").addEventListener("click", () => {
+    error.textContent = "";
+    status.textContent = "";
+    const token = input.value;
+    if (!/^[a-f0-9]{64}$/.test(token)) {
+      input.setAttribute("aria-invalid", "true");
+      error.textContent = "Enter the 64-character private credential exactly as supplied: lowercase letters a–f and numbers 0–9.";
+      input.focus();
+      return;
+    }
+    input.removeAttribute("aria-invalid");
+    clear();
+    status.textContent = "Opening Forth. If it does not open, install and open Forth once, then return here and try again.";
+    window.location.assign("forth://reviewer-access?token=" + token);
+  });
+})();</script>
+</body>
+</html>
