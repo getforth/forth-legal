@@ -29,7 +29,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="date">Forth · Effective October 1, 2026 · Last updated October 1, 2026</p>
+<p class="date">Forth · Effective October 1, 2026 · Last updated October 8, 2026</p>
 
 <div class="summary">
   <strong>Privacy at a glance.</strong> Forth keeps its core recovery features on
@@ -38,16 +38,17 @@
   the service hosting the feed receives the posts
   you share, a random community identifier, and standard authentication and
   connection information. The moderation provider receives post text without
-  that identifier. Forth also uses limited product analytics unless you turn
-  them off. We do not sell personal information, show ads, or track you across
+  that identifier. The iOS app also uses limited product analytics unless you
+  turn them off. The Android app does not send these product events to PostHog.
+  We do not sell personal information, show ads, or track you across
   other apps and websites.
 </div>
 
 <h2>1. About this policy</h2>
 <p>
   This Privacy Policy explains how information is processed when you use the
-  Forth iOS app, The Room, Forth's support and legal pages, or communicate with
-  Forth support (together, the "Services"). Forth is operated by
+  Forth iOS and Android apps, The Room, Forth's support and legal pages, or
+  communicate with Forth support (together, the "Services"). Forth is operated by
   <strong>Infobolt LLC</strong> ("Forth", "we", "us", or "our"). It should
   be read together with our
   <a href="./terms.html">Terms of Use</a>.
@@ -89,9 +90,9 @@
 </p>
 <p>
   Daily reminders are scheduled by your device. Forth does not operate a push
-  notification server. If you enable the biometric lock, iOS performs the
-  authentication and tells Forth whether it succeeded; Forth does not receive
-  your fingerprint or Face ID data.
+  notification server. If you enable the biometric lock, your device performs
+  authentication and tells Forth whether it succeeded. Forth does not receive
+  your biometric data or device passcode.
 </p>
 
 <h2>3. The Room</h2>
@@ -112,7 +113,7 @@
 </p>
 <p>
   The community database does not contain a direct field connecting your Room
-  actor identifier to an Apple or RevenueCat customer identifier. We do not
+  actor identifier to a store or RevenueCat customer identifier. We do not
   provide public profile pages, though posts are associated with the same actor
   identifier so that Forth can display conversations, identify your own posts,
   and apply blocks and moderation rules.
@@ -172,10 +173,14 @@
 
 <h2>4. Limited product analytics</h2>
 <p>
-  Unless you turn analytics off, Forth sends a limited set of product events to
-  PostHog. These events use a random app identifier that is not linked to your
-  name or contact information. They help us understand whether app features work
+  On iOS, unless you turn analytics off, Forth sends a limited set of product
+  events to PostHog. These events use a random app identifier that is not linked
+  to your name or contact information. They help us understand whether app features work
   and where people leave the setup flow.
+</p>
+<p>
+  The Android app does not send these product events to PostHog. This does not
+  stop purchase processing or the information you choose to share in The Room.
 </p>
 <p>
   Events may record that a creator referral link was opened; an onboarding,
@@ -209,6 +214,13 @@
   from Forth.
 </p>
 <p>
+  For Google Play purchases on Android, Google processes subscription payments.
+  RevenueCat receives an anonymous customer identifier, Google purchase tokens
+  and purchase information, subscription status, last-use information, and
+  basic device and operating-system details. We do not receive your full
+  payment card details or Google Account credentials.
+</p>
+<p>
   If you choose web checkout, RevenueCat manages your subscription and Stripe
   processes payment. We pass RevenueCat's app customer identifier to checkout
   so the purchase can unlock access in Forth. Checkout collects your billing
@@ -224,6 +236,8 @@
 <p>
   Apple's handling of your purchase is described in
   <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>, and
+  Google's handling of Google Play purchases is described in
+  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
   RevenueCat's handling of purchase information is described in its
   <a href="https://www.revenuecat.com/privacy-policy">RevenueCat Privacy Policy</a>.
   Stripe's handling of web payment information is described in the
@@ -232,14 +246,29 @@
 
 <h2>6. The blocker and device permissions</h2>
 <p>
-  Forth's optional blocker uses Apple's Screen Time system. For apps, categories,
-  and web domains selected through Apple's picker, Forth receives opaque tokens
+  On iOS, Forth's optional blocker uses Apple's Screen Time system. For apps,
+  categories, and web domains selected through Apple's picker, Forth receives opaque tokens
   and counts rather than the selected names. Those tokens stay on your device.
   Custom website addresses are also stored locally and passed to the blocking
   system on your device. When you enable Forth's Safari extension, it checks
   the current top-level website hostname locally against your blocking rules
   to open a Reset for supported matches. It does not send visited hostnames
   to us or store browsing history.
+</p>
+<p>
+  On Android, Forth's optional blocker uses Accessibility after separate consent.
+  It reads app package names, window positions and focus information on supported
+  displays to apply the rules you choose and keep essential controls available.
+  Website checks read visible addresses, including optional Reddit community
+  paths, from known address bars in Chrome, Firefox, DuckDuckGo and Brave.
+  Embedded pages and native Reddit feeds are not inspected.
+</p>
+<p>
+  These checks run on your device. Forth's Accessibility blocker does not save
+  or transmit visited addresses, browsing history, page content or temporary
+  window snapshots. Your blocking choices, schedules, break deadlines, pending
+  Reset state and browser connection-test results stay on your device. You can
+  turn off Accessibility access in Android Settings.
 </p>
 <p>
   Forth does not request access to your contacts, photos, microphone, camera, or
@@ -280,7 +309,7 @@
   Stripe, which processes web payments; Apple, which processes App Store payments
   and provides device services;
   <a href="https://policies.google.com/privacy">Google</a>, which delivers
-  support messages through Gmail; and
+  support messages through Gmail and processes Google Play purchases; and
   <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>,
   which hosts the support and legal pages. We use these providers for the
   purposes described in this policy. Their handling of information is also
@@ -308,7 +337,7 @@
   Local information remains on your device until it is changed or removed. The
   Privacy screen includes a control for erasing certain local recovery records.
   That control does not cancel your subscription, delete Room records, or reset
-  every iOS-managed setting or credential. Some
+  every device-managed permission, setting or credential. Some
   security credentials are stored through the iOS Keychain and may remain after
   an app uninstall under Apple's device-storage behavior.
 </p>
@@ -332,7 +361,8 @@
 <ul>
   <li><strong>Analytics:</strong> turn off future product analytics from the Privacy screen.</li>
   <li><strong>Certain local recovery records:</strong> use the erase control on the Privacy screen.</li>
-  <li><strong>Reminders and app lock:</strong> change these settings in Forth or iOS.</li>
+  <li><strong>Reminders and app lock:</strong> change these settings in Forth or your device settings.</li>
+  <li><strong>Android blocker:</strong> turn off Accessibility access in Android Settings.</li>
   <li><strong>Community controls:</strong> report posts and block or unblock handles in The Room.</li>
 </ul>
 <p>

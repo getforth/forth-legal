@@ -27,7 +27,7 @@
 <body>
 
 <h1>Nevada Consumer Health Data Privacy Policy</h1>
-<p class="date">Forth · Effective October 1, 2026 · Last updated October 1, 2026</p>
+<p class="date">Forth · Effective October 1, 2026 · Last updated October 8, 2026</p>
 
 <h2>1. Scope</h2>
 <p>
@@ -42,11 +42,11 @@
 
 <h2>2. Categories collected, purposes, and manner of use</h2>
 <ul>
-  <li><strong>On-device recovery and sexual-wellness information:</strong> assessment responses; the plan derived from them; reset and setback history; urge or intensity ratings; reflections; progress, world discoveries, and saved artwork; blocker configuration, Screen Time selections and counts, and custom blocked domains; and reminder and privacy preferences. Forth processes these locally to personalize the plan, provide exercises and progress features, operate the blocker, schedule reminders, and apply privacy settings. Raw assessment responses are discarded after the plan is generated, and Forth does not send the content of these records to its servers. A creator attribution code may also be captured from a direct Forth referral link and stored locally to remember the referral source. When analytics is enabled, the code is used to measure that referral as described below.</li>
+  <li><strong>On-device recovery and sexual-wellness information:</strong> assessment responses; the plan derived from them; reset and setback history; urge or intensity ratings; reflections; progress, world discoveries, and saved artwork; blocker configuration, iOS Screen Time selections and counts, Android blocking choices and temporary app window and address bar checks, and custom blocked domains; and reminder and privacy preferences. Forth processes these locally to personalize the plan, provide exercises and progress features, operate the blocker, schedule reminders, and apply privacy settings. Raw assessment responses are discarded after the plan is generated, and Forth does not send the content of these records to its servers. A creator attribution code may also be captured from a direct Forth referral link and stored locally to remember the referral source. When analytics is enabled, the code is used to measure that referral as described below.</li>
   <li><strong>Room and moderation information:</strong> posts and replies; reports, blocks, and report reasons; moderation decisions and status; strikes, restrictions, and crisis flags; and related timestamps. Forth processes these to publish and thread eligible content, apply blocks, moderate and review content, show crisis resources, enforce the Terms of Use, and protect The Room.</li>
   <li><strong>Pseudonymous identifiers and technical information:</strong> a Supabase authentication user identifier and an actor identifier, generated handle, authentication and session events, a per-install Room eligibility identifier, a blinded Room eligibility-token request, a redeemed Room eligibility-token hash, an eligibility-source identifier hash, request time and status, IP address, user agent, app or client version, and device or operating-system information. This may also include a random analytics identifier when analytics is enabled. Forth processes these to authenticate Room access, deliver and secure online features, enforce rate limits, prevent abuse and token reuse, and troubleshoot reliability.</li>
-  <li><strong>Product analytics:</strong> unless you turn analytics off, events showing that a creator referral link was opened; an onboarding, plan-reveal, offer, purchase, or restore event occurred; the dashboard, World, gallery, or The Room was viewed; a reset or game activity occurred; a Room submission was attempted; the blocker changed; or a reminder was enabled. Limited fields may include a step or offer identifier, post type, game mode, duration, placement count, restore outcome, and creator code. Forth uses these to measure and improve the product. They do not include assessment responses, plan or reflection content, Room text or handles, report reasons, blocker selections, custom domains, or browsing history.</li>
-  <li><strong>Purchase and subscription information:</strong> an anonymous RevenueCat customer identifier, Apple receipt and purchase information, transaction and product or offer information, subscription and entitlement status, restore outcome, last-use information, and basic app or device information. Forth processes these to complete and restore purchases and manage paid app access.</li>
+  <li><strong>Product analytics:</strong> on iOS, unless you turn analytics off, events showing that a creator referral link was opened; an onboarding, plan-reveal, offer, purchase, or restore event occurred; the dashboard, World, gallery, or The Room was viewed; a reset or game activity occurred; a Room submission was attempted; the blocker changed; or a reminder was enabled. Limited fields may include a step or offer identifier, post type, game mode, duration, placement count, restore outcome, and creator code. Forth uses these to measure and improve the product. They do not include assessment responses, plan or reflection content, Room text or handles, report reasons, blocker selections, custom domains, or browsing history. The Android app does not send these product events to PostHog.</li>
+  <li><strong>Purchase and subscription information:</strong> an anonymous RevenueCat customer identifier, Apple receipts or Google Play purchase tokens, purchase information, transaction and product or offer information, subscription and entitlement status, restore outcome, last-use information, and basic app or device information. Forth processes these to complete and restore purchases and manage paid app access.</li>
   <li><strong>Support information:</strong> the email address, message, attachments, and metadata you choose to send. Forth processes these to respond, troubleshoot, handle privacy requests, and keep a reasonable support record.</li>
   <li><strong>Derived information:</strong> the plan derived on your device from assessment responses and moderation decisions derived from submitted Room text. Forth uses these to provide the requested plan and moderate The Room.</li>
 </ul>
@@ -57,7 +57,7 @@
 <ul>
   <li>You, through answers, feature settings, Room activity, purchases, direct Forth referral links, and support requests</li>
   <li>Your device, app interactions, and technical connection to Forth's online services</li>
-  <li>Apple, RevenueCat, and Stripe, for purchase and subscription information</li>
+  <li>Apple, Google, RevenueCat, and Stripe, for purchase and subscription information</li>
   <li>Forth's systems and service providers, which generate identifiers, handles, plans, moderation decisions, analytics records, and technical logs</li>
   <li>Other Room participants, when they reply to, report, or block content involving you</li>
 </ul>
@@ -68,7 +68,7 @@
   <li><strong>Supabase:</strong> Room authentication, identifiers and handles, eligibility identifiers, blinded token requests and token hashes, content, reports, blocks, moderation and access records, and technical connection information</li>
   <li><strong>Anthropic:</strong> submitted Room post or reply text for automated moderation, without the Room handle, actor identifier, subscription information, or post history</li>
   <li><strong>PostHog:</strong> the random analytics identifier, approved product events and fields, creator code when present, and technical connection information when analytics is enabled</li>
-  <li><strong>Apple and RevenueCat:</strong> purchase, receipt, subscription, entitlement, restore, and related technical information</li>
+  <li><strong>Apple, Google, and RevenueCat:</strong> purchase, receipt or purchase token, subscription, entitlement, restore, and related technical information</li>
   <li><strong>RevenueCat and Stripe for web checkout:</strong> billing email, required billing and payment details, transaction records, and related technical information for payments, renewals, receipts, cancellation, refunds, and support</li>
   <li><strong>Google:</strong> support email, attachments, and message metadata sent through Gmail</li>
   <li><strong>GitHub:</strong> technical request information when it hosts Forth's support and legal pages</li>
@@ -84,7 +84,7 @@
 
 <h2>5. How consumer health data is processed</h2>
 <p>
-  Forth's app and Apple's device services process on-device information locally.
+  Forth's app and your device's operating-system services process on-device information locally.
   Online information is transmitted to and processed by the recipients listed
   in Section 4 for the stated purposes. Access is limited to the people and
   providers reasonably necessary to operate the requested feature, provide
