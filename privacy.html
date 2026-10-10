@@ -29,7 +29,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="date">Forth · Effective October 1, 2026 · Last updated October 8, 2026</p>
+<p class="date">Forth · Effective October 1, 2026 · Last updated October 10, 2026</p>
 
 <div class="summary">
   <strong>Privacy at a glance.</strong> Forth keeps its core recovery features on
@@ -271,6 +271,24 @@
   turn off Accessibility access in Android Settings.
 </p>
 <p>
+  On Android, optional network protection uses Android's VPN permission after
+  separate consent. It filters other apps' DNS lookups for website and service
+  names, including background requests. These lookups do not prove that you
+  visited a page. Forth blocks matching names locally without forwarding them.
+  Allowed DNS requests go to Cloudflare over encrypted HTTPS; Cloudflare receives
+  those names and your connection's IP address. With Adult websites on, Forth
+  uses Cloudflare Families' adult-content and malware filtering; with it off,
+  Forth uses Cloudflare's unfiltered Public DNS. Full web traffic, URL paths and
+  page contents are not sent through this DNS connection. Forth keeps no DNS
+  visit history. Cloudflare keeps limited resolver logs and gives APNIC limited
+  access to anonymized research data, as described in its
+  <a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/">resolver privacy notice</a>.
+  Apps using their own DNS, cached answers or direct IP connections can bypass
+  filtering. You can disconnect in Forth or turn Forth's VPN off in Android
+  Settings. Removing your saved Cloudflare choice withdraws consent and
+  disconnects.
+</p>
+<p>
   Forth does not request access to your contacts, photos, microphone, camera, or
   precise location. It may request notification permission for a local daily
   reminder and biometric authentication permission for the optional app lock.
@@ -363,6 +381,7 @@
   <li><strong>Certain local recovery records:</strong> use the erase control on the Privacy screen.</li>
   <li><strong>Reminders and app lock:</strong> change these settings in Forth or your device settings.</li>
   <li><strong>Android blocker:</strong> turn off Accessibility access in Android Settings.</li>
+  <li><strong>Android network protection:</strong> disconnect in Forth, remove your saved Cloudflare choice, or turn Forth's VPN off in Android Settings.</li>
   <li><strong>Community controls:</strong> report posts and block or unblock handles in The Room.</li>
 </ul>
 <p>
